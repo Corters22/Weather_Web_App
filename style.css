@@ -30,19 +30,25 @@
 .box-1 {
     height: 500px;
     width:600px;
-    padding: 20px;
+    padding: 10px;
     color: black;
     background: white;
-    align-content:stretch;
+    align-content:inherit;
+    margin-bottom: 5px;
   }
+
+  .box-1 p {
+      text-align: inherit;
+  }
+
   .box-2 {
-    height: 400px;
-    padding: 20px;
+    height: 550px;
+    padding: 10px;
     color: black;
     background: white;
   }
 
-  .box-2 img {
-      height:150px;
-      width: 150px;
+  .box-2 img a{
+    height:100px;
+    width: 100px;
   }
