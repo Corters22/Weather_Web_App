@@ -1,0 +1,48 @@
+/* style of body of page to grey */
+.body {
+    background-color: lightgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* style of navbar */
+.heading {
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:left;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar-nav ul {
+    margin-left: 60px;
+}
+
+.navbar {
+    background-color: midnightblue;
+    padding:5px;
+}
+
+.navbar li a {
+    color:white;
+}
+
+/* building boxes for visualizations */
+.box-1 {
+    height: 500px;
+    width:600px;
+    padding: 20px;
+    color: black;
+    background: white;
+    align-content:stretch;
+  }
+  .box-2 {
+    height: 400px;
+    padding: 20px;
+    color: black;
+    background: white;
+  }
+
+  .box-2 img {
+      height:150px;
+      width: 150px;
+  }
