@@ -26,6 +26,7 @@
     color:white;
 }
 
+/* index page */
 /* building boxes for visualizations */
 .box-1 {
     height: 500px;
@@ -42,7 +43,7 @@
   }
 
   .box-2 {
-    height: 550px;
+    height: 400px;
     padding: 10px;
     color: black;
     background: white;
@@ -52,3 +53,13 @@
     height:100px;
     width: 100px;
   }
+
+  .vis_image {
+      height:500px
+  }
+
+ @media (max-width:600px) {
+     .vis_image {
+         height:300px
+     }
+ }
