@@ -58,8 +58,16 @@
       height:500px
   }
 
+  table h5{
+      text-align: center;
+  }
+
  @media (max-width:600px) {
      .vis_image {
          height:300px
+     }
+     table > tr td {
+        display: inline-block;
+        width: 100%
      }
  }
