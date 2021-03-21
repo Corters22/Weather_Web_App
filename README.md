@@ -36,3 +36,7 @@ D. Data
     This last page holds the table with all the city data. This is from the csv file in the Resources directory. 
     
    ![data](Visualizations/data_screenshot.PNG)
+   
+### Public URL
+
+[https://corters22.github.io/Web_Design_Challenge/index.html](https://corters22.github.io/Web_Design_Challenge/index.html)
