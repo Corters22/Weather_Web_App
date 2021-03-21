@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lat vs Temp</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -12,61 +12,83 @@
     <link rel="stylesheet" href="style.css" type='text/css'>
 </head>
 <body class="body">
-    <div class='container'>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class='navbar-text heading' style='color:white'>Latitude</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+            Plots
+          </a>
+          <ul class="dropdown-menu" style="background-color: midnightblue" aria-labelledby='navbarDropdownMenuLink'>
+            <li><a class="dropdown-item" href='visualization-temp.html'>Temperature</a></li>
+            <li><a class="dropdown-item" href='visualization-humidity.html'>Humidity</a></li>
+            <li><a class="dropdown-item" href='visualization-cloud.html'>Cloudiness</a></li>
+            <li><a class='dropdown-item' href='visualization-wind.html'>Wind Speed</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br/>
+  <br/>
+   <!-- content -->
 
-        <!--Navbar -->
-          
-        <nav class="navbar navbar-expand-sm col-md-12">
-          <div class="navbar-text heading col-md-8">
-            Latitude
-          </div>  
-          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
-              <ul class="navbar-nav col-md-4">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id='plotdropdown' role='button' data-toggle='dropdown'
-                  >Plots</a>
-                  <div class='dropdown-menu' style=background-color:midnightblue aria-labelledby="plotdropdown">
-                    <a class='dropdown-item' href='visualization-temp.html'>Temperature</a>
-                    <a class='dropdown-item' href='visualization-humidity.html'>Humidity</a>
-                    <a class='dropdown-item' href='visualization-cloud.html'>Cloudiness</a>
-                    <a class='dropdown-item' href='visualization-wind.html'>Wind Speed</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="comparison.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="data.html">Data</a>
-                </li>
-                <li class='nav-item'>
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-              </ul>
-              </div>
-            </nav>
-            <br/>
-            <br/>
-      <div class="row">
-        <div class='col-md-12' style='text-align: center'>
-          <h2 style="color:midnightblue">Latitude vs Temperature</h2>
+   <div class="container">
+    <div class='row'>
+      <div class='col-md-4 col-lg-8'>
+        <h3 style='color:midnightblue; margin: 15px'>Latitude vs Max Temperature</h3>
+        <hr>
+        <br/>
+        <img src="Visualizations/Fig1.png" alt="Temperature" class="col-md-6 float-md-left mb-3 ms-md-3" style='size: 600px;'>
+              <p> 
+                This chart is showing how Latitude affects the temperature. You can see that there is in fact a correlation between maximum temperature and latitude. The Equator is located at 0 degrees and the temperature rises as it gets closer to the Equator.
+              </p>
+              <p>            
+                Based on this chart we can make the conclusion that as we move further from the Equator, the temperature will continue to decrease. This explains why the North and South Poles have the lowest temperatures.
+              </p>
+      </div>
+      <div class='col-md-4 col-lg-4 border'>
+        <h3 style='color:midnightblue; margin:15px'>Visualizations</h3>
+        <hr>
+        <br/>
+        <div class='container'>
+          <div class=row>
+            <div class='col-md-4 col-lg-6'>
+              <a href='visualization-temp.html'><img src='Visualizations/Fig1.png' style='height:100px'></a>
+            </div>
+            <div class='col-md-4 col-lg-6'>
+              <a href='visualization-humidity.html'><img src='Visualizations/Fig2.png' style=height:100px></a>
+            </div>
+          </div>
+          <div class=row>
+            <div class='col-lg-6 col-md-4'>
+              <a href='visualization-cloud.html'><img src='Visualizations/Fig3.png' style=height:100px></a>
+            </div>
+            <div class='col-lg-6 col-md-4'>
+              <a href='visualization-wind.html'><img src='Visualizations/Fig4.png' style=height:100px></a>
+            </div>
+          </div>
         </div>
       </div>
-      <br/>
-      <div class="row">
-        <div class='col-md-1'></div>
-        <div class='col-md-7'>
-          <img src="Visualizations/Fig1.png" alt='Latitude vs Temp' class='vis_image'>
-        </div>
-        <div class='col-md-3' style='margin-top: 50px'>
-          <strong>
-            <p>This chart is showing how Latitude affects the temperature. You can see that there is in fact a correlation between maximum temperature and latitude. The Equator is located at 0 degrees and the temperature rises as it gets closer to the Equator.</p>
-            <p>Based on this chart we can make the conclusion that as we move further from the Equator, the temperature will continue to decrease. This explains why the North and South Poles have the lowest temperatures.</p>
-          </strong>
-        </div>
-        <div class='col-md-1'></div>
-      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
 </body>
 </html>

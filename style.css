@@ -4,6 +4,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.container {
+    background-color: white;
+}
+
 /* style of navbar */
 .heading {
     color:white;
@@ -13,61 +17,56 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.navbar-nav ul {
+.navbar-nav, .nav-item {
     margin-left: 60px;
+    color:white;
+    text-align: right;
 }
 
 .navbar {
     background-color: midnightblue;
     padding:5px;
+    color:white;
 }
 
 .navbar li a {
     color:white;
 }
 
+.navbar-toggler {
+    background-color:white;
+}
+
 /* index page */
-/* building boxes for visualizations */
-.box-1 {
-    height: 500px;
-    width:600px;
-    padding: 10px;
-    color: black;
-    background: white;
-    align-content:inherit;
-    margin-bottom: 5px;
-  }
-
-  .box-1 p {
-      text-align: inherit;
-  }
-
-  .box-2 {
-    height: 400px;
-    padding: 10px;
-    color: black;
-    background: white;
-  }
-
-  .box-2 img a{
-    height:100px;
-    width: 100px;
-  }
 
   .vis_image {
       height:500px
   }
 
-  table h5{
-      text-align: center;
+tr:nth-child(even) {
+      background-color: lightgray;
+    }
+
+table {
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+    background-color: white;
+    align-self: center;
+}    
+
+  .border {
+      border:20px;
+      border-color:midnightblue;
   }
 
- @media (max-width:600px) {
-     .vis_image {
-         height:300px
-     }
-     table > tr td {
-        display: inline-block;
-        width: 100%
-     }
- }
+  /* resixing */
+ 
+@media (max-width: 480px) {
+        .table > tbody > tr td {
+            display: inline-block;
+            width: 100%
+        }
+        .table > tbody > tr td input {
+            width: 100%
+        }
+    }
