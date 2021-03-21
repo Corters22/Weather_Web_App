@@ -30,9 +30,9 @@ B. Visualizations
 C. Comparison
     This page shows all four charts next to each other to get a quick visual comparison. Each picture is also a link to its respective visualization description page.
     
-   ![comparison](comparision_screenshot.PNG)
+   ![comparison](Visualizations/comparision_screenshot.PNG)
     
 D. Data
     This last page holds the table with all the city data. This is from the csv file in the Resources directory. 
     
-   ![data](data_screenshot.PNG)
+   ![data](Visualizations/data_screenshot.PNG)
