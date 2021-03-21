@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cloudiness</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -39,7 +39,7 @@
             <a class="nav-link" href="data.html">Data</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
         </ul>
       </div>
@@ -47,45 +47,50 @@
   </nav>
   <br/>
   <br/>
-    
-    <!-- content -->
-    <div class='container-fluid'>
-        <div class='row'>
-            <div class='col-md-1 col-sm-0'></div>
-            <div class='col-md-10 col-sm-12' style='background-color: white'>
-                <br/>
-            <h2 style='color:midnightblue'>Comparison: Latitude vs X</h2>
-            <hr>
-            <strong><p>Click on any plot to get an in depth analysis.</p></strong>
-            <br/>
-            <div class='container'>
-              <div class=row>
-                <div class='col-lg-6 col-sm-4'>
-                  <h5 style='color:midnightblue'>vs. Max Temperature</h5>
-                  <a href='visualization-temp.html'><img src='Visualizations/Fig1.png' alt='Latitude vs Temp' style='width:500px'></a>
-                </div>
-                <div class='col-lg-6 col-sm-4'>
-                  <h5 style='color:midnightblue'>vs. Humidity</h5>
-                  <a href='visualization-humidity.html'><img src='Visualizations/Fig2.png' alt='Latitude vs Humidity' style='width:500px'></a>
-                </div>
-              </div>
-              <div class=row>
-                <div class='col-lg-6 col-sm-4'>
-                  <h5 style='color:midnightblue'>vs. Cloudiness</h5>
-                  <a href='visualization-cloud.html'><img src='Visualizations/Fig3.png' alt='Latitude vs Cloud' style='width:500px'></a>
-                </div>
-                <div class='col-lg-6 col-sm-4'>
-                  <h5 style='color:midnightblue'>vs. Wind Speed</h5>
-                  <a href='visualization-wind.html'><img src='Visualizations/Fig4.png' alt='Latitude vs Wind' style='width:500px'></a>
-                </div>
-              </div>
-            </div>
-            
 
+   <!-- content -->
+
+   <div class="container">
+    <div class='row'>
+      <div class='col-md-4 col-lg-8'>
+        <h3 style='color:midnightblue; margin: 15px'>Latitude vs Cloudiness</h3>
+        <hr>
+        <br/>
+        <img src="../Visualizations/Fig3.png" alt="Cloudiness" class="col-md-6 float-md-left mb-3 ms-md-3" style='size: 700px;'>
+              <p> 
+                This chart is showing how latitude affects the cloudiness of the area. You can see that there is not a correlation between the amount of clouds and latitude. You will also notice how many of the markers are in straight lines. This is because of how cloudiness is recorded..
+              </p>
+              <p>            
+                Based on this chart we can make the conclusion that as we move further from the Equator, the cloudiness is not directly affected. There are a lot of different factors that could increase or decrease the amount of clouds.
+              </p>
+      </div>
+      <div class='col-md-4 col-lg-4 border'>
+        <h3 style='color:midnightblue; margin:15px'>Visualizations</h3>
+        <hr>
+        <br/>
+        <div class='container'>
+          <div class=row>
+            <div class='col-md-4 col-lg-6'>
+              <a href='visualization-temp.html'><img src='../Visualizations/Fig1.png' style='height:100px'></a>
             </div>
-            
+            <div class='col-md-4 col-lg-6'>
+              <a href='visualization-humidity.html'><img src='../Visualizations/Fig2.png' style=height:100px></a>
+            </div>
+          </div>
+          <div class=row>
+            <div class='col-lg-6 col-md-4'>
+              <a href='visualization-cloud.html'><img src='../Visualizations/Fig3.png' style=height:100px></a>
+            </div>
+            <div class='col-lg-6 col-md-4'>
+              <a href='visualization-wind.html'><img src='../Visualizations/Fig4.png' style=height:100px></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <br/>
+  <br/>
+    
 </body>
 </html>
-

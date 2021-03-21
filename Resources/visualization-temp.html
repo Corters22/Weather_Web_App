@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Temperature</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -39,7 +39,7 @@
             <a class="nav-link" href="data.html">Data</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
         </ul>
       </div>
@@ -47,49 +47,48 @@
   </nav>
   <br/>
   <br/>
+   <!-- content -->
 
-    <!-- content -->
-
-    <div class="container">
-      <div class='row'>
-        <div class='col-md-4 col-lg-8'>
-          <h3 style='color:midnightblue; margin: 15px'>Latitude vs Humidity</h3>
-          <hr>
-          <br/>
-          <img src="Visualizations/Fig2.png" alt="Humidity" class="col-md-6 float-md-left mb-3 ms-md-3" style='size: 600px;'>
-                <p> 
-                  This chart is showing how latitude affects the humidity of the area. You can see that there is not a correlation between the humidity and latitude.
-                </p>
-                <p>            
-                  Based on this chart we can make the conclusion that as we move further from the Equator, the humidity is not directly affected. Humidity is probably most influenced by whether or not the city is located near the coast.
-                </p>
-        </div>
-        <div class='col-md-4 col-lg-4 border'>
-          <h3 style='color:midnightblue; margin:15px'>Visualizations</h3>
-          <hr>
-          <br/>
-          <div class='container'>
-            <div class=row>
-              <div class='col-md-4 col-lg-6'>
-                <a href='visualization-temp.html'><img src='Visualizations/Fig1.png' style='height:100px'></a>
-              </div>
-              <div class='col-md-4 col-lg-6'>
-                <a href='visualization-humidity.html'><img src='Visualizations/Fig2.png' style=height:100px></a>
-              </div>
+   <div class="container">
+    <div class='row'>
+      <div class='col-md-4 col-lg-8'>
+        <h3 style='color:midnightblue; margin: 15px'>Latitude vs Max Temperature</h3>
+        <hr>
+        <br/>
+        <img src="../Visualizations/Fig1.png" alt="Temperature" class="col-md-6 float-md-left mb-3 ms-md-3" style='size: 600px;'>
+              <p> 
+                This chart is showing how Latitude affects the temperature. You can see that there is in fact a correlation between maximum temperature and latitude. The Equator is located at 0 degrees and the temperature rises as it gets closer to the Equator.
+              </p>
+              <p>            
+                Based on this chart we can make the conclusion that as we move further from the Equator, the temperature will continue to decrease. This explains why the North and South Poles have the lowest temperatures.
+              </p>
+      </div>
+      <div class='col-md-4 col-lg-4 border'>
+        <h3 style='color:midnightblue; margin:15px'>Visualizations</h3>
+        <hr>
+        <br/>
+        <div class='container'>
+          <div class=row>
+            <div class='col-md-4 col-lg-6'>
+              <a href='visualization-temp.html'><img src='../Visualizations/Fig1.png' style='height:100px'></a>
             </div>
-            <div class=row>
-              <div class='col-lg-6 col-md-4'>
-                <a href='visualization-cloud.html'><img src='Visualizations/Fig3.png' style=height:100px></a>
-              </div>
-              <div class='col-lg-6 col-md-4'>
-                <a href='visualization-wind.html'><img src='Visualizations/Fig4.png' style=height:100px></a>
-              </div>
+            <div class='col-md-4 col-lg-6'>
+              <a href='visualization-humidity.html'><img src='../Visualizations/Fig2.png' style=height:100px></a>
+            </div>
+          </div>
+          <div class=row>
+            <div class='col-lg-6 col-md-4'>
+              <a href='visualization-cloud.html'><img src='../Visualizations/Fig3.png' style=height:100px></a>
+            </div>
+            <div class='col-lg-6 col-md-4'>
+              <a href='visualization-wind.html'><img src='../Visualizations/Fig4.png' style=height:100px></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <br/>
-    <br/>
+  </div>
+  <br/>
+  <br/>
 </body>
 </html>
