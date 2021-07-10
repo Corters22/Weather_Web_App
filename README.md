@@ -39,4 +39,4 @@ D. Data
    
 ### Public URL
 
-[https://corters22.github.io/Web_Design_Challenge/index.html](https://corters22.github.io/Web_Design_Challenge/index.html)
+[https://corters22.github.io/Web_Design_Challenge/index.html](https://corters22.github.io/Weather_Web_App/index.html)
